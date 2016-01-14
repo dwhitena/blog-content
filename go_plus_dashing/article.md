@@ -14,3 +14,8 @@ Enter [Go](https://golang.org/) and [Dashing](http://dashing.io/).  If you are n
 
 [Go](https://golang.org/) may not be the first language that you think of when building a [Dashing](http://dashing.io/) dashboard, as many run [Ruby](https://www.ruby-lang.org/en/) jobs to populate the dashboards.  However, I will argue here that [Go](https://golang.org/) is a great choice, and has proved quite useful for me in combination with [Dashing](http://dashing.io/).
 
+### Dashing setup
+
+### Go job
+
+### Deployment/use
