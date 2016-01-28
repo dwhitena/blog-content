@@ -18,7 +18,7 @@ Enter [Go](https://golang.org/) and [Dashing](http://dashing.io/).  If you are n
 
 First of all, we will need to install [Dashing](http://dashing.io/).  This is outlined on there [website](http://dashing.io/).  For this example, we will start from the default dashing dashboard that can be created with the following command:
 
-
+    dashing new sweet_dashboard_project
 
 ### Go job
 
