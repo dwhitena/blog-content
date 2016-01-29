@@ -22,6 +22,6 @@ First of all, we will need to install [Dashing](http://dashing.io/).  This is ou
 
 ### Go job
 
-
+Why Go?  Well, at our organization and many others, people are using Go to develop microservices that have low memory usage, utilize concurrency, deploy easily with Docker, etc. In my case, I am developing Go services that are part of a data pipeline and are already generating aggregates and metrics that need to be displayed on a dashboard.  Why not just feed these metrics straight from Go to Dashing?  In fact, this is easy, and it works out quite well.
 
 ### Deployment/use
