@@ -27,3 +27,5 @@ Why Go?  Well, at our organization and many others, people are using Go to devel
 ### Deployment/use
 
 Both the Dashing and Go projects include Dockerfiles so that they can be containerized.  Note, this is actually an advantage of splitting out the Go job from Dashing, because the dashboard can be maintained/updated etc. separate from the Go project.
+
+## Final Thoughts
