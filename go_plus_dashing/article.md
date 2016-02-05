@@ -12,7 +12,7 @@ For one these dashboards, I ended up using the [ELK](https://www.elastic.co/) st
 
 Enter [Go](https://golang.org/) and [Dashing](http://dashing.io/).  If you are not familiar, [Dashing](http://dashing.io/) is a "Sinatra based framework that lets you build beautiful dashboards."  It is open source (https://github.com/Shopify/dashing), was developed by [Shopify](https://www.shopify.com/), and has an active community developing tons of [third-party widgets](https://github.com/Shopify/dashing/wiki/Additional-Widgets).
 
-[Go](https://golang.org/) may not be the first language that you think of when building a [Dashing](http://dashing.io/) dashboard, as many run [Ruby](https://www.ruby-lang.org/en/) jobs to populate the dashboards.  However, I will argue here that [Go](https://golang.org/) is a great choice, and has proved quite useful for me in combination with [Dashing](http://dashing.io/).
+[Go](https://golang.org/) may not be the first language that you think of when building a [Dashing](http://dashing.io/) dashboard, as many run [Ruby](https://www.ruby-lang.org/en/) jobs to populate the dashboards.  However, I will argue here that [Go](https://golang.org/) is a great choice, and has proved quite useful for me in combination with [Dashing](http://dashing.io/).  Let's use an example dashboard to illustrate this point:
 
 ### Dashing setup
 
@@ -25,7 +25,11 @@ Then the dashboard can be run with:
 
 	dashing start
 
-As you will see this project comes with a variety of example widgets.  However, one nice things about dashing is the huge number of [third party widgets](https://github.com/Shopify/dashing/wiki/Additional-Widgets) we can utilize.
+As you will see this example dashboard that is generated with the `dashing new` command comes with a variety of example widgets (visit localhost:3030 to see what they look like).  However, keep in mind that one great thing about dashing is the huge number of [third party widgets](https://github.com/Shopify/dashing/wiki/Additional-Widgets).
+
+For this example, we are going to imagine that we have three worker processes in a worker pool of a Go-based server of some kind.  These three worker processes may be handling REST requests, processing messages from a queue, etc.  In any event, this may be a typical situation encountered by a Go programmer given that Go makes concurrency so natural.
+
+In the dashboard, let's create three widgets, one corresponding to each worker, that will monitor how many events each 
 
 ### Go job
 
