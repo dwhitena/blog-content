@@ -16,9 +16,16 @@ Enter [Go](https://golang.org/) and [Dashing](http://dashing.io/).  If you are n
 
 ### Dashing setup
 
-First of all, we will need to install [Dashing](http://dashing.io/).  This is outlined on there [website](http://dashing.io/).  For this example, we will start from the default dashing dashboard that can be created with the following command:
+First of all, we will need to install [Dashing](http://dashing.io/).  This is outlined on there [website](http://dashing.io/).  For this example, we will start from the default dashing dashboard that can be created with the following commands:
 
     dashing new sweet_dashboard_project
+    bundle
+
+Then the dashboard can be run with:
+
+	dashing start
+
+As you will see this project comes with a variety of example widgets.  However, one nice things about dashing is the huge number of [third party widgets](https://github.com/Shopify/dashing/wiki/Additional-Widgets) we can utilize.
 
 ### Go job
 
